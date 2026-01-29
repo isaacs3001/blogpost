@@ -1,0 +1,68 @@
+# See https://help.github.com/articles/ignoring-files for more about ignoring files.
+
+# Ruby
+*.gem
+*.rbc
+.bundle
+vendor/bundle
+
+# Rails specific
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# SQLite database
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Credentials
+/config/master.key
+/config/credentials/*.key
+
+# Assets
+/public/assets
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+
+# Cache
+/cache
+/tmp/cache
+/tmp/pids
+/tmp/sockets
+
+# Uploaded files (Active Storage)
+/storage/*
+!/storage/.keep
+
+# Byebug / Debugger
+.byebug_history
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Tests & coverage
+/coverage
+
+# Logs
+*.log
+
+# Bundler
+Gemfile.lock (ignore if this is a gem; keep it for apps)
+
+# Spring
+/spring/*.pid
